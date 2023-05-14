@@ -46,7 +46,7 @@ namespace Detectors {
 			if ( mbi.Type != MEM_PRIVATE )
 				continue;
 
-			if ( mbi.Protect == PAGE_EXECUTE_READ ) { 
+			if ( mbi.Protect == PAGE_EXECUTE_READWRITE ) { 
 			
 				Helpers::ModuleNameFromAddress ( hProcess, NULL, processName );
 
